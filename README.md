@@ -4,11 +4,11 @@ Execute only 5 commands and have gem5 ready. A very simple script to install gem
 Execute the gem5_install.sh in sudo mode and have it all. 
 ---------------------------------------------------------------------------- 
  
- 1  cd ...
+ 1    cd < dir >...
  
- 2  sudo chmod +x gem5_install.sh 
+ 2    sudo chmod +x gem5_install.sh 
  
- 3  sudo ./gem5_install.sh
+ 3    sudo ./gem5_install.sh
 
 Below is the discription of all the process
 ----------------------------------------------------------
