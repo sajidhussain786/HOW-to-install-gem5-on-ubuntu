@@ -20,7 +20,8 @@ $ sudo apt-get update; sudo apt-get upgrade
 
 sudo apt-get install swig gcc m4 python python-dev libgoogle-perftools-dev  g++  scons  mercurial  zlib1g-dev libgoogle-perftools-dev protobuf-compiler libprotobuf-dev build-essential 
 
-# you can download the .tar.gz file and extract it but I prefer grabbing from the repo just in # case you needed to run $ hg pull to update the code or to commit
+
+you can download the .tar.gz file and extract it but I prefer grabbing from the repo just in # case you needed to run $ hg pull to update the code or to commit
 
 $ hg clone http://repo.gem5.org/gem5   # this is a developer version
 
