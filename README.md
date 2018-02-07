@@ -1,6 +1,7 @@
 # HOW-to-install-gem5-on-ubuntu
-Execute only 5 commands and have gem5 ready. A very simple script to install gem5 on linux based system. I checked it with ubuntu 16.4 but it can work with any linux machine . ------------------------------------------------------------------------------------------
-Execute the gem5_install.sh in sudo mode and have it all.
+Execute only 5 commands and have gem5 ready. A very simple script to install gem5 on linux based system. I checked it with ubuntu 16.4 but it can work with any linux machine . --------------------------------------------------------------------------------------------
+
+Execute the gem5_install.sh in sudo mode and have it all. 
 ----------------------------------------------------------------------------
 
 
@@ -10,7 +11,10 @@ Assuming you have a fresh Ubuntu 16.4 installed, and I assume you already unders
 
 $ sudo apt-get update; sudo apt-get upgrade
 
-# installing the needed packages for Gem5
+# installing the needed packages for Gem5 
+
+sudo apt-get install swig gcc m4 python python-dev libgoogle-perftools-dev  g++  scons  mercurial  zlib1g-dev libgoogle-perftools-dev protobuf-compiler libprotobuf-dev build-essential 
+
 # you can download the .tar.gz file and extract it but I prefer grabbing from the repo just in # case you needed to run $ hg pull to update the code or to commit
 
 $ hg clone http://repo.gem5.org/gem5   # this is a developer version
