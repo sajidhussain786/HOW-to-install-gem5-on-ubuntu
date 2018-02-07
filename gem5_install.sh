@@ -33,4 +33,4 @@ echo ""
 sudo scons build/ARM/gem5.opt 
 
 ## To test the System Emulation mode you can run one of the programs shipped with Gem5
-$ ./build/ARM/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/arm/linux/hel­lo
+$ ./build/ARM/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/arm/linux/hello
