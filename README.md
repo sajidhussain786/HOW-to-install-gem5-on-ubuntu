@@ -1,9 +1,11 @@
 # HOW-to-install-gem5-on-ubuntu
-Execute only 5 commands and have gem5 ready. A very simple script to install gem5 on linux based system. I checked it with ubuntu 16.4 but it can work with any linux machine . --------------------------------------------------------------------------------------------
+Execute only 5 commands and have gem5 ready. A very simple script to install gem5 on linux based system. I checked it with ubuntu 16.4 but it can work with any linux machine .  
 
 Execute the gem5_install.sh in sudo mode and have it all. 
 ----------------------------------------------------------------------------
-
+cd <dir>/
+sudo chmod +x gem5_install.sh
+sudo ./gem5_install.sh
 
 Below is the discription of all the process
 ----------------------------------------------------------
