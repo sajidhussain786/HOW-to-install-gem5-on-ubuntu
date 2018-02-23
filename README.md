@@ -32,7 +32,14 @@ $ cd gem5/
 $ scons build/ARM/gem5.opt
 
 ## To test the System Emulation mode you can run one of the programs shipped with Gem5
-$ ./build/ARM/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/arm/linux/hel­lo
+$ ./build/ARM/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/arm/linux/hel­lo 
+## To get memory access trace you have to change some source code
+I took help from http://icomparch.blogspot.com.au/2014/10/gem5-instructions-for-enabling-full.html to edit source code but its patch does not work me directly as the source codes files are already updated and look different than by patch
+ After doing all necessary changes in source code I rebuilted my gem5 and executed thte following command 
+ ./build/X86/gem5.opt --debug-flags=MMU --debug-file=mmu_trace.log  ./configs/example/se.py --cpu-type=TimingSimpleCPU --caches --l2cache -c /home/sajid/simple_c_out 
+ It has successfully generated a memory trace file named as "tracefile.txt" in ascii format as shown in the example tracefile.txt . 
+ It can generate memory trace of every executable program on gem5. best for those who are studying/anlysing memory access behaviour of sofwares. 
+ 
 
 
 
